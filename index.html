@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+		<meta charset="utf-8">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+		<title>Music Player</title>
+		<link rel="stylesheet" href="css/music.css">
+		<link rel="stylesheet" href="font-awesome-4.6.3/css/font-awesome.min.css">
+	</head>
+	<body>
+		<div class="background">
+			<img id='photo' class='img' src="img/0.jpg" >
+			<img id='sPhoto' class='two-img' src="img/0.jpg">
+		</div>
+		<div class="music">
+			<audio id='id-audio-player' data-now=0>
+				<source src="mp3/1.mp3">
+			</audio>
+			<div class="controls">
+				<input type="range" class='range' value="0">
+				<span id='nowTime'>00:00</span>
+				<span id='time'></span>
+				<div class="">
+					<span class='list'>
+						<i class="fa fa-bars" aria-hidden="true"></i>
+					</span>
+					<span class="heart">
+						<i class="fa fa-heart" aria-hidden="true"></i>
+					</span>
+				</div>
+				<div class="h3">
+					<div id='name-0' class="name active">成都</div>
+					<div id='name-1' class='name'>嘿，抬头！</div>
+					<div id='name-2' class='name'>微光</div>
+                    <div id='name-3' class='name'>刚好遇见你</div>
+                    <div id='name-4' class='name'>Be Somebody</div>
+                    <div id='name-5' class='name'>More Than I Can Say</div>
+                    <div id='name-6' class='name'>Imagine Dragons</div>
+				</div>
+				<div class="h4">
+					<div id='name1-0' class="name action">赵雷</div>
+					<div id='name1-1' class='name'>贰佰</div>
+					<div id='name1-2' class='name'>莫文蔚,杨子</div>
+                    <div id='name1-3' class='name'>李玉刚</div>
+                    <div id='name1-4' class='name'>Thousand Foot Krutch</div>
+                    <div id='name1-5' class='name'>Leo Sayer</div>
+                    <div id='name1-6' class='name'>Battle Cry</div>
+				</div>
+				<div id="prevSong"  style="margin: 20px 0px 10px 85px;">
+					<div id='shangSong'>
+						<i class="fa fa-chevron-circle-left" aria-hidden="true"></i>
+					</div>
+				</div>
+				<div id="action" class="now circle actives" style="margin: 20px 0px 10px 20px;">
+					<div class="circle_inner_play">
+					</div>
+				</div>
+				<div id="stop" class="now circle" style="margin: 20px 0px 10px 20px;">
+					<div class="circle_inner_pause">
+						▐▐
+					</div>
+				</div>
+				<div id="lastSong"  style="margin: 20px 0px 10px 85px;">
+					<div id='nextSong'>
+						<i class="fa fa-chevron-circle-right" aria-hidden="true"></i>
+					</div>
+				</div>
+			</div>
+            <div class="gray">
+            </div>
+            <div class="songList move">
+                <span class="list-title">播放列表</span>
+                <span class="xian"></span>
+                <div class='song-title '>
+                    <span id='title-0' class='songtitle' data-path=0>成都</span>
+                    <span class="xian"></span>
+                    <span id='title-1' class='songtitle' data-path=1>嘿，抬头！</span>
+                    <span class="xian"></span>
+                    <span id='title-2' class='songtitle'  data-path=2>微光</span>
+                    <span class="xian"></span>
+                    <span id='title-3' class='songtitle'  data-path=3>刚好遇见你</span>
+                    <span class="xian"></span>
+                    <span id='title-4' class='songtitle'  data-path=4>Be Somebody</span>
+                    <span class="xian"></span>
+                    <span id='title-5' class='songtitle'  data-path=5>More Than I Can Say</span>
+                    <span class="xian"></span>
+                    <span id='title-6' class='songtitle'  data-path=6>Imagine Dragons</span>
+                    <span class="xian"></span>
+                </div>
+            </div>
+		</div>
+		<script src="js/master.js"></script>
+	</body>
+</html>
